@@ -9,10 +9,10 @@ Ils sont distribués en [GPL v3](https://www.gnu.org/licenses/) et peuvent bien 
 
 ## Présentation
 
-* Présentation du module Projet - 14.6 MO - [http://ginhac.com/teaching/wifibot/slides.pdf](http://ginhac.com/teaching/wifibot/slides.pdf)
+* Présentation du module Projet - 14.6 MO - [http://ginhac.com/teaching/wifibot/slides.pdf](http://ginhac.com/teaching/wifibot/slides.pdf) Non à jour.
 
 ## Fichiers à télécharger
 
-* Dossier [docs](docs): Ensemble des documentations sur le robot wifibot Lab v3.
-* Dossier [qt](qt): Classe QT C++ pour se connecter au robot
-* 
+* Dossier [docs](docs) : Ensemble des documentations sur le robot wifibot Lab v3.
+* Dossier [qt](qt) : Classe QT C++ pour se connecter au robot.
+* dossier évaluation : cahier des charges et grilles d'availuation du projet.
