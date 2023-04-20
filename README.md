@@ -15,4 +15,4 @@ Ils sont distribués en [GPL v3](https://www.gnu.org/licenses/) et peuvent bien 
 
 * Dossier [docs](docs) : Ensemble des documentations sur le robot wifibot Lab v3.
 * Dossier [qt](qt) : Classe QT C++ pour se connecter au robot.
-* dossier évaluation : cahier des charges et grilles d'availuation du projet.
+* dossier [evaluation](evaluation) : cahier des charges et grilles d'availuation du projet.
