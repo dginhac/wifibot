@@ -22,6 +22,10 @@ public:
 private slots:
     void on_connexion_button_clicked();
 
+    void on_deconnexion_button_clicked();
+
+    void updateBattery();
+
 private:
     Ui::MainWindow *ui;
 };

@@ -7,11 +7,11 @@ MyRobot::MyRobot(QObject *parent) : QObject(parent) {
     DataToSend[0] = 0xFF;
     DataToSend[1] = 0x07;
     DataToSend[2] = 0x0;
-    DataToSend[3] = 0x10;
-    DataToSend[4] = 0x10;
-    DataToSend[5] = 0x10;
-    DataToSend[6] = 0x10;
-    DataToSend[7] = 0x0;
+    DataToSend[3] = 0xFF;
+    DataToSend[4] = 0x11;
+    DataToSend[5] = 0xFF;
+    DataToSend[6] = 0xAA;
+    DataToSend[7] = 0xAB;
     DataToSend[8] = 0x0;
     DataReceived.resize(21);
     TimerEnvoi = new QTimer();
@@ -27,15 +27,16 @@ void MyRobot::doConnect() {
     connect(socket, SIGNAL(bytesWritten(qint64)),this, SLOT(bytesWritten(qint64)));
     connect(socket, SIGNAL(readyRead()),this, SLOT(readyRead()));
     qDebug() << "connecting..."; // this is not blocking call
-    //socket->connectToHost("LOCALHOST", 5001);
-    socket->connectToHost("192.168.10.1", 5003); // connection to wifibot
+    //socket->connectToHost("LOCALHOST", port);
+    //socket->connectToHost("192.168.1.106", 15020); // connection to wifibotlab
+    socket->connectToHost("192.168.10.1", 5009);
     // we need to wait...
     if(!socket->waitForConnected(5000)) {
         qDebug() << "Error: " << socket->errorString();
         return;
     }
-    TimerEnvoi->start(75);
-
+    //TimerEnvoi->start(75);
+    this->GetData();
 }
 
 void MyRobot::disConnect() {
@@ -69,3 +70,8 @@ void MyRobot::MyTimerSlot() {
     Mutex.unlock();
 }
 
+void MyRobot::GetData(){
+    for (int i = 0; i < this->DataReceived.size(); i ++) {
+        qDebug() << (int)this->DataReceived.at(i);
+    }
+}
