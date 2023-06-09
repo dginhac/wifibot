@@ -16,6 +16,7 @@ SOURCES += \
     myrobot.cpp
 
 HEADERS += \
+    direction.h \
     mainwindow.h \
     myrobot.h
 FORMS += \

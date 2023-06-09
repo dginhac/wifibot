@@ -24,10 +24,14 @@ private slots:
 
     void on_deconnexion_button_clicked();
 
+    void updateSpeed();
+
     void updateBattery();
 
 private:
     Ui::MainWindow *ui;
+    long odometryLBefore = 0;
+    long odometryRBefore = 0;
 };
 
 #endif // MAINWINDOW_H
