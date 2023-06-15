@@ -22,12 +22,32 @@ public:
 
     void buttonToConnect();
 
+    void buttonToForward();
+    void buttonToBackward();
+    void buttonToLeft();
+    void buttonToRight();
+    void buttonToStop();
+
+    void constSpeed();
+
     void connected();
     void disconnected();
+
+    void cameraMove(QString direction);
+    void keyPressEvent(QKeyEvent *event);
+    void setBattery(int battery);
+    void setSpeed(QString speed);
+    void setInfraRedFrontLeft(int IR);
+    void setInfraRedFrontRight(int IR);
+    void setInfraRedBackLeft(int IR);
+    void setInfraRedBackRight(int IR);
+    void setOdometry(QString speed);
 
 private:
     Ui::MainUI *ui;
     Controller *myController;
+    QNetworkAccessManager *Camera;
+    QWebEngineView *webEngineView;
 };
 
 #endif // MAINUI_H
