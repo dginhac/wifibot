@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/down.png</file>
+        <file>img/left.png</file>
+        <file>img/right.png</file>
+        <file>img/stop.png</file>
+        <file>img/up.png</file>
+    </qresource>
+</RCC>
