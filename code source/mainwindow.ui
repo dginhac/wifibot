@@ -82,103 +82,11 @@
      <string>Batterie</string>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>140</y>
-      <width>101</width>
-      <height>23</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_2">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>120</y>
-      <width>111</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Vitesse roue avant gauche</string>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="lcdNumber_2">
-    <property name="geometry">
-     <rect>
-      <x>650</x>
-      <y>140</y>
-      <width>101</width>
-      <height>23</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>650</x>
-      <y>120</y>
-      <width>111</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Vitesse route avant droite</string>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="lcdNumber_3">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>210</y>
-      <width>101</width>
-      <height>23</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>490</x>
-      <y>190</y>
-      <width>111</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Vitesse roue arrière gauche</string>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="lcdNumber_4">
-    <property name="geometry">
-     <rect>
-      <x>650</x>
-      <y>210</y>
-      <width>101</width>
-      <height>23</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_5">
-    <property name="geometry">
-     <rect>
-      <x>650</x>
-      <y>190</y>
-      <width>111</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Vitesse roue arrière droite</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="label_6">
     <property name="geometry">
      <rect>
-      <x>440</x>
-      <y>20</y>
+      <x>620</x>
+      <y>110</y>
       <width>91</width>
       <height>16</height>
      </rect>
@@ -190,14 +98,144 @@
    <widget class="QLabel" name="speed">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>20</y>
+      <x>620</x>
+      <y>90</y>
       <width>91</width>
       <height>16</height>
      </rect>
     </property>
     <property name="text">
      <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>90</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Vitesse</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sensorFR">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>170</y>
+      <width>37</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sensorFL">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>170</y>
+      <width>37</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sensorBR">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>200</y>
+      <width>37</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>140</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Capteurs</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="sensorBL">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>200</y>
+      <width>37</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Avancer">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>270</y>
+      <width>80</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Avancer</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Droite">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>310</y>
+      <width>80</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Droite</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Gauche">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>310</y>
+      <width>80</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gauche</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Reculer">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>350</y>
+      <width>80</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reculer</string>
     </property>
    </widget>
   </widget>

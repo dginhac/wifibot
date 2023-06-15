@@ -34,13 +34,14 @@ bool MyRobot::doConnect() {
     connect(socket, SIGNAL(readyRead()),this, SLOT(readyRead()));
     qDebug() << "connecting..."; // this is not blocking call
     //socket->connectToHost("LOCALHOST", port);
-    //socket->connectToHost("192.168.1.106", 15020); // connection to wifibotlab
-    socket->connectToHost("192.168.10.1", 5006);
+    socket->connectToHost("192.168.1.106", 15020); // connection to wifibotlab
+    //socket->connectToHost("192.168.10.1", 5006); // connection to wifibotpi
     // we need to wait...
     if(!socket->waitForConnected(5000)) {
         qDebug() << "Error: " << socket->errorString();
     }
-    //TimerEnvoi->start(75);
+    TimerEnvoi->start(75);
+    return true;
 }
 
 void MyRobot::disConnect() {
